@@ -15,3 +15,7 @@ class AuthError extends AuthState {
   String errorMessage;
   AuthError({required this.errorMessage});
 }
+class AuthTogglePassword extends AuthState {
+  bool isShowPassword;
+  AuthTogglePassword({required this.isShowPassword});
+}
