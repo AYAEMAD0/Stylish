@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:stylish/core/theme/app_theme.dart';
 import 'core/routing/app_router.dart';
 import 'core/routing/routes.dart';
 
@@ -17,6 +18,8 @@ class StylishApp extends StatelessWidget {
         return MaterialApp(debugShowCheckedModeBanner: false,
           initialRoute: Routes.loginRouteName,
           onGenerateRoute: appRouter.generateRoute,
+          theme: AppTheme.theme,
+          themeMode: ThemeMode.light,
         );
       },
     );
