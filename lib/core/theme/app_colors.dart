@@ -3,11 +3,14 @@ import 'package:flutter/material.dart';
 class AppColors{
   static const primaryColor = Color(0xFF004182);
   static const whiteColor= Color(0xFFFFFFFF);
+  static const blackColor= Color(0xff000000);
   static const grayColor = Color(0xB3000000);                ///70%
+  static const grayLightColor = Color(0xff808080);
   static const blueDarkColor = Color(0xFF06004F);
   static const blueDarkWithOpacityColor= Color(0x9906004f);  ///60%
   static const offerWithOpacityColor= Color(0x99004182);     ///60%
   static const borderWithOpacityColor= Color(0x4D004182);    ///30%
+  static const transparentColor= Colors.transparent;
 
 
   ///colors product

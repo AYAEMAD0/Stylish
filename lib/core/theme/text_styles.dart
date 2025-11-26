@@ -75,4 +75,14 @@ class TextStyles {
     fontWeight: FontWeightHelper.medium,
     color: AppColors.blueDarkWithOpacityColor,
   );
+  static TextStyle font18RedMedium = GoogleFonts.poppins(
+    fontSize: 18.sp,
+    fontWeight: FontWeightHelper.medium,
+    color: AppColors.redColor,
+  );
+  static TextStyle font18BlackMedium = GoogleFonts.poppins(
+    fontSize: 18.sp,
+    fontWeight: FontWeightHelper.medium,
+    color: AppColors.blackColor,
+  );
 }
