@@ -4,17 +4,13 @@ class AppAssets{
   static const arrowIcon='assets/images/svgs/arrow.svg';
   static const cartIcon='assets/images/svgs/cart.svg';
   static const cartShoppingIcon='assets/images/svgs/cart_shopping.svg';
-  static const categorySelectedIcon='assets/images/svgs/category_selected.svg';
-  static const categoryUnselectedIcon='assets/images/svgs/category_unselected.svg';
+  static const productIcon='assets/images/svgs/product.svg';
   static const deleteIcon='assets/images/svgs/delete.svg';
   static const editIcon='assets/images/svgs/edit.svg';
-  static const favSelectedIcon='assets/images/svgs/fav_selected.svg';
-  static const favUnselectedIcon='assets/images/svgs/fav_unselected.svg';
-  static const homeSelectedIcon='assets/images/svgs/home_selected.svg';
-  static const homeUnselectedIcon='assets/images/svgs/home_unselected.svg';
+  static const favIcon='assets/images/svgs/fav.svg';
+  static const homeIcon='assets/images/svgs/home.svg';
   static const searchIcon='assets/images/svgs/search.svg';
   static const starIcon='assets/images/svgs/star.svg';
-  static const userSelectedIcon='assets/images/svgs/user_selected.svg';
-  static const userUnselectedIcon='assets/images/svgs/user_unselected.svg';
+  static const userIcon='assets/images/svgs/user.svg';
 
 }
