@@ -39,6 +39,8 @@ import '../domain/usecases/login_use_case.dart' as _i646;
 import '../domain/usecases/register_use_case.dart' as _i744;
 import '../features/auth/login/viewmodel/login_cubit.dart' as _i177;
 import '../features/auth/register/viewmodel/register_cubit.dart' as _i735;
+import '../features/auth/login/viewmodel/login_cubit.dart' as _i177;
+import '../features/auth/register/viewmodel/register_cubit.dart' as _i735;
 import '../features/dashboard/tabs/home/viewmodel/home_cubit.dart' as _i672;
 
 extension GetItInjectableX on _i174.GetIt {

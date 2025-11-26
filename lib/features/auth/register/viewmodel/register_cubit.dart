@@ -3,8 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:injectable/injectable.dart';
 import 'package:stylish/core/exceptions/app_exception.dart';
-import 'package:stylish/domain/entities/request/auth/register_request.dart';
 import 'package:stylish/domain/usecases/register_use_case.dart';
+import 'package:stylish/domain/entities/request/auth/register_request.dart';
+
 import '../../auth_state.dart';
 
 @injectable
