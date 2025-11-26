@@ -5,14 +5,14 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:stylish/config/di.dart';
 import 'package:stylish/core/routing/routes.dart';
 import 'package:stylish/core/theme/app_colors.dart';
-import 'package:stylish/features/ui/auth/auth_state.dart';
-import 'package:stylish/features/ui/auth/login/viewmodel/login_cubit.dart';
 import '../../../../../core/constants/app_assets.dart';
 import '../../../../../core/helper/vaildator.dart';
 import '../../../../../core/theme/text_styles.dart';
 import '../../../../../core/utils/custom_dialog.dart';
 import '../../../../../core/widgets/custom_button.dart';
 import '../../../../../core/widgets/custom_text_field.dart';
+import '../../auth_state.dart';
+import '../viewmodel/login_cubit.dart';
 import '../widget/already_and_donot_have_account.dart';
 
 class LoginView extends StatefulWidget {

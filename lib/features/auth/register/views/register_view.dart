@@ -4,8 +4,6 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:stylish/config/di.dart';
 import 'package:stylish/core/routing/routes.dart';
-import 'package:stylish/features/ui/auth/auth_state.dart';
-import 'package:stylish/features/ui/auth/register/viewmodel/register_cubit.dart';
 import '../../../../../core/constants/app_assets.dart';
 import '../../../../../core/helper/vaildator.dart';
 import '../../../../../core/theme/app_colors.dart';
@@ -13,6 +11,8 @@ import '../../../../../core/theme/text_styles.dart';
 import '../../../../../core/utils/custom_dialog.dart';
 import '../../../../../core/widgets/custom_button.dart';
 import '../../../../../core/widgets/custom_text_field.dart';
+import '../../auth_state.dart';
+import '../viewmodel/register_cubit.dart';
 
 class RegisterView extends StatefulWidget {
   const RegisterView({super.key});

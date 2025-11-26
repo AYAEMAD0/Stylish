@@ -5,7 +5,8 @@ import 'package:injectable/injectable.dart';
 import 'package:stylish/core/exceptions/app_exception.dart';
 import 'package:stylish/domain/entities/request/register_request.dart';
 import 'package:stylish/domain/usecases/register_use_case.dart';
-import 'package:stylish/features/ui/auth/auth_state.dart';
+
+import '../../auth_state.dart';
 
 @injectable
 class RegisterCubit extends Cubit<AuthState> {
