@@ -38,8 +38,8 @@ class _DashboardViewState extends State<DashboardView> {
         decoration: BoxDecoration(
           color: AppColors.primaryColor,
           borderRadius: BorderRadius.only(
-            topLeft: Radius.circular(35.r),
-            topRight: Radius.circular(35.r),
+            topLeft: Radius.circular(37.r),
+            topRight: Radius.circular(37.r),
           )
         ),
         child: BottomNavigationBar(
