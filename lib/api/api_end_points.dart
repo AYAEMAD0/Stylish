@@ -4,4 +4,5 @@ class ApiEndPoints {
   static const String loginEndPoint="auth/signin";
   static const String categoriesEndPoint="categories";
   static const String brandsEndPoint="brands";
+  static const String productsEndPoint="products";
 }

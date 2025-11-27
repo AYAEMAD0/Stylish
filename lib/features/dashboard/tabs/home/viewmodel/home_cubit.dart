@@ -21,7 +21,7 @@ class HomeCubit extends Cubit<HomeState> {
     AppAssets.banner3,
   ];
   HomeCubit({required this.categoriesUseCase,required this.brandsUseCase}):super(HomeInitial());
-HomeSuccess successState=HomeSuccess();
+  HomeSuccess successState=HomeSuccess();
 
   void getAllCategories()async{
     try{

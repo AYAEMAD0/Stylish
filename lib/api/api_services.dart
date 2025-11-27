@@ -6,6 +6,7 @@ import 'package:stylish/api/model/response/brands/brands_response_dto.dart';
 import 'package:stylish/api/model/response/categories/categories_response_dto.dart';
 import 'model/request/auth/register_request_dto.dart';
 import 'model/response/auth/auth_response_dto.dart';
+import 'model/response/products/products_response_dto.dart';
 
 part 'api_services.g.dart';
 
@@ -25,4 +26,7 @@ abstract class ApiServices {
 
   @GET(ApiEndPoints.brandsEndPoint)
   Future<BrandsResponseDto> getAllBrands();
+
+  @GET(ApiEndPoints.productsEndPoint)
+  Future<ProductsResponseDto> getAllProducts();
 }
