@@ -40,8 +40,8 @@ class TextStyles {
     fontWeight: FontWeightHelper.light,
     color: AppColors.blueDarkWithOpacityColor,
   );
-  static TextStyle font18BlueDarkMedium = GoogleFonts.poppins(
-    fontSize: 18.sp,
+  static TextStyle font20BlueDarkMedium = GoogleFonts.poppins(
+    fontSize: 20.sp,
     fontWeight: FontWeightHelper.medium,
     color: AppColors.blueDarkColor,
   );

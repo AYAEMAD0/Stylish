@@ -12,5 +12,9 @@ class AppAssets{
   static const searchIcon='assets/images/svgs/search.svg';
   static const starIcon='assets/images/svgs/star.svg';
   static const userIcon='assets/images/svgs/user.svg';
+  //banner
+  static const banner1='assets/images/pngs/banner1.png';
+  static const banner2='assets/images/pngs/banner2.png';
+  static const banner3='assets/images/pngs/banner3.png';
 
 }
