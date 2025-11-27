@@ -1,7 +1,7 @@
 import 'package:dio/dio.dart';
 import 'package:flutter/material.dart';
 import 'package:injectable/injectable.dart';
-import 'package:stylish/domain/entities/request/login_request.dart';
+import 'package:stylish/domain/entities/request/auth/login_request.dart';
 import 'package:stylish/domain/usecases/login_use_case.dart';
 import '../../../../../core/exceptions/app_exception.dart';
 import '../../auth_state.dart';

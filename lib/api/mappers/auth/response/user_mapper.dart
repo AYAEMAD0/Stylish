@@ -1,5 +1,5 @@
-import 'package:stylish/api/model/response/user_dto.dart';
-import '../../domain/entities/response/user.dart';
+import 'package:stylish/api/model/response/auth/user_dto.dart';
+import '../../../../domain/entities/response/auth/user.dart';
 
 extension UserMapper on UserDto {
   User toUser() {

@@ -1,7 +1,7 @@
-import 'package:stylish/api/mappers/user_mapper.dart';
-import 'package:stylish/api/model/response/auth_response_dto.dart';
+import 'package:stylish/api/mappers/auth/response/user_mapper.dart';
 import 'package:stylish/core/exceptions/app_exception.dart';
-import 'package:stylish/domain/entities/response/auth_response.dart';
+import 'package:stylish/domain/entities/response/auth/auth_response.dart';
+import '../../../model/response/auth/auth_response_dto.dart';
 
 extension AuthResponseMapper on AuthResponseDto{
   AuthResponse toAuthResponse(){

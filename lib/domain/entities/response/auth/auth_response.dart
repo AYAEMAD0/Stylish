@@ -1,4 +1,4 @@
-import 'package:stylish/domain/entities/response/user.dart';
+import 'package:stylish/domain/entities/response/auth/user.dart';
 
 class AuthResponse {
   final String? message;

@@ -1,13 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:stylish/core/routing/routes.dart';
-import 'package:stylish/features/dashboard/tabs/fav/view/fav_view.dart';
-import 'package:stylish/features/dashboard/tabs/home/view/home_view.dart';
-import 'package:stylish/features/dashboard/tabs/product/view/product_view.dart';
-import 'package:stylish/features/dashboard/tabs/user/view/user_view.dart';
 import '../../features/auth/login/views/login_view.dart';
 import '../../features/auth/register/views/register_view.dart';
 import '../../features/dashboard/dashboard_view.dart';
-
+import '../../features/dashboard/tabs/fav/view/fav_view.dart';
+import '../../features/dashboard/tabs/home/view/home_view.dart';
+import '../../features/dashboard/tabs/product/view/product_view.dart';
+import '../../features/dashboard/tabs/user/view/user_view.dart';
 
 class AppRouter {
   Route generateRoute(RouteSettings settings) {

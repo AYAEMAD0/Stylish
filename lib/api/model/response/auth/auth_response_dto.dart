@@ -1,5 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'package:stylish/api/model/response/user_dto.dart';
+import 'package:stylish/api/model/response/auth/user_dto.dart';
 part 'auth_response_dto.g.dart';
 
 @JsonSerializable()

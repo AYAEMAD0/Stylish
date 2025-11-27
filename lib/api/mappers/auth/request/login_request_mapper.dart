@@ -1,5 +1,5 @@
-import 'package:stylish/api/model/request/login_request_dto.dart';
-import 'package:stylish/domain/entities/request/login_request.dart';
+import 'package:stylish/api/model/request/auth/login_request_dto.dart';
+import 'package:stylish/domain/entities/request/auth/login_request.dart';
 
 extension LoginRequestMapper on LoginRequest{
   LoginRequestDto toLoginRequestDto(){
