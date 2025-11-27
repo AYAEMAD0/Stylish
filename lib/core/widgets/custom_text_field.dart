@@ -25,6 +25,8 @@ class CustomTextField extends StatelessWidget {
   final bool? obscure;
   final String? obscureCharacter;
   final void Function(String)? onChanged;
+  final double? radius;
+  final EdgeInsetsGeometry? contentPadding;
   const CustomTextField({
     super.key,
     required this.controller,
@@ -45,6 +47,8 @@ class CustomTextField extends StatelessWidget {
     this.obscure = false,
     this.obscureCharacter,
     this.onChanged,
+    this.radius,
+    this.contentPadding
   });
 
   @override
@@ -67,7 +71,7 @@ class CustomTextField extends StatelessWidget {
         hintStyle: hintStyle??TextStyles.font18GrayLight,
         labelText: label,
         labelStyle: labelStyle,
-        contentPadding: EdgeInsets.symmetric(
+        contentPadding:contentPadding?? EdgeInsets.symmetric(
           horizontal: 20.w,
           vertical: 20.h,
         ),
@@ -88,8 +92,8 @@ class CustomTextField extends StatelessWidget {
 
   OutlineInputBorder builtBorder([Color colorBorder = AppColors.redColor]) {
     return OutlineInputBorder(
-      borderRadius: BorderRadius.circular(16),
-      borderSide: BorderSide(color: colorBorder, width: 1.1),
+      borderRadius: BorderRadius.circular(radius??16.r),
+      borderSide: BorderSide(color: colorBorder, width: 1.3.w),
     );
   }
 }

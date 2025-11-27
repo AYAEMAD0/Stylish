@@ -16,7 +16,7 @@ class StylishApp extends StatelessWidget {
       splitScreenMode: true,
       builder: (_, child) {
         return MaterialApp(debugShowCheckedModeBanner: false,
-          initialRoute: Routes.loginRouteName,
+          initialRoute: Routes.dashboardRouteName,
           onGenerateRoute: appRouter.generateRoute,
           theme: AppTheme.theme,
           themeMode: ThemeMode.light,
