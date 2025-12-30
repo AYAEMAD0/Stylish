@@ -3,9 +3,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:stylish/core/constants/app_assets.dart';
 import 'package:stylish/core/theme/app_colors.dart';
+import 'package:stylish/features/dashboard/tabs/products/view/products_view.dart';
 import 'tabs/fav/view/fav_view.dart';
 import 'tabs/home/view/home_view.dart';
-import 'tabs/product/view/product_view.dart';
 import 'tabs/user/view/user_view.dart';
 
 class DashboardView extends StatefulWidget {
@@ -19,7 +19,7 @@ class _DashboardViewState extends State<DashboardView> {
   int selectedIndex = 0;
   List<Widget> viewSelected = [
     HomeView(),
-    ProductView(),
+    ProductsView(),
     FavView(),
     UserView(),
   ];

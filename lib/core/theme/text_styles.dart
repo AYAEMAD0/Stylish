@@ -55,8 +55,8 @@ class TextStyles {
     fontWeight: FontWeightHelper.regular,
     color: AppColors.blueDarkColor,
   );
-  static TextStyle font11OfferRegular = GoogleFonts.poppins(
-    fontSize: 11.sp,
+  static TextStyle font14OfferRegular = GoogleFonts.poppins(
+    fontSize: 14.sp,
     fontWeight: FontWeightHelper.regular,
     color: AppColors.offerWithOpacityColor,
   );
@@ -84,5 +84,15 @@ class TextStyles {
     fontSize: 18.sp,
     fontWeight: FontWeightHelper.medium,
     color: AppColors.blackColor,
+  );
+  static TextStyle font18BlueDarkRegular = GoogleFonts.poppins(
+    fontSize: 18.sp,
+    fontWeight: FontWeightHelper.regular,
+    color: AppColors.blueDarkColor,
+  );
+  static TextStyle font16BlueDarkRegular = GoogleFonts.poppins(
+    fontSize: 16.sp,
+    fontWeight: FontWeightHelper.regular,
+    color: AppColors.blueDarkColor,
   );
 }
