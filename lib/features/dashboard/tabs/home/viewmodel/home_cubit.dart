@@ -21,13 +21,14 @@ class HomeCubit extends Cubit<HomeState> {
     AppAssets.banner3,
   ];
   HomeCubit({required this.categoriesUseCase,required this.brandsUseCase}):super(HomeInitial());
-HomeSuccess successState=HomeSuccess();
+  //todo using copyWith -->HomeSuccess successState=HomeSuccess();
 
   void getAllCategories()async{
     try{
       emit(HomeCategoriesLoading());
       var response=await categoriesUseCase.call();
-      emit(successState=successState.copyWith(categoriesResponse: response,));
+      //todo using copyWith-->emit(successState=successState.copyWith(categoriesResponse: response,));
+      emit(HomeCategoriesSuccess(categoriesResponse: response));
     }on AppException catch(e){
       emit(HomeCategoriesError(errorMessage: e.message));
     }on DioException catch(e){
@@ -42,7 +43,8 @@ HomeSuccess successState=HomeSuccess();
     try{
       emit(HomeBrandsLoading());
       var response=await brandsUseCase.call();
-      emit(successState=successState.copyWith(brandsResponse: response));
+      //todo using copyWith --> emit(successState=successState.copyWith(brandsResponse: response));
+      emit(HomeBrandsSuccess(brandsResponse: response));
     }on AppException catch(e){
       emit(HomeBrandsError(errorMessage: e.message));
     }on DioException catch(e){
