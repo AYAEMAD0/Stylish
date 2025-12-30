@@ -56,8 +56,9 @@ class _HomeViewState extends State<HomeView> {
               BuiltLineViewAll(textOne: "Categories", textTwo: "view all"),
               BlocBuilder<HomeCubit, HomeState>(
                 bloc: viewModel,
+                buildWhen: (previous, current) => current is HomeCategoriesSuccess || current is HomeCategoriesError || current is HomeCategoriesLoading,
                 builder: (context, state) {
-                  if (state is HomeSuccess) {
+                  if (state is HomeCategoriesSuccess) {
                     return SizedBox(
                       height: 270.h,
                       child: GridView.builder(
@@ -122,8 +123,9 @@ class _HomeViewState extends State<HomeView> {
               BuiltLineViewAll(textOne: "Brands", textTwo: "view all"),
               BlocBuilder<HomeCubit, HomeState>(
                 bloc: viewModel,
+                buildWhen: (previous, current) => current is HomeBrandsSuccess || current is HomeBrandsError || current is HomeBrandsLoading,
                 builder: (context, state) {
-                  if (state is HomeSuccess) {
+                  if (state is HomeBrandsSuccess) {
                     return SizedBox(
                       height: 270.h,
                       child: GridView.builder(
@@ -134,9 +136,9 @@ class _HomeViewState extends State<HomeView> {
                           crossAxisSpacing: 10.h,
                           mainAxisExtent: 100.h,
                         ),
-                        itemCount: state.brandsResponse?.data?.length??0,
+                        itemCount: state.brandsResponse.data?.length??0,
                         itemBuilder: (context, index) {
-                          var data=state.brandsResponse?.data?[index];
+                          var data=state.brandsResponse.data?[index];
                           return Column(
                             spacing: 10.h,
                             children: [
